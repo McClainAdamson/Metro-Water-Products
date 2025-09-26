@@ -1,0 +1,152 @@
+Deepsite Prompt — Metro Quick-Start (Dark Theme)
+
+Project: Metro Quick-Start Guides — Dark Landing Page
+
+Goal: One ultra-simple, fast landing page with large, tappable PDF buttons for five guides: Metro Soft, Metro Duo, Metro AIO, Metro 5, and Chlor-Out.
+
+Branding & Theme
+
+Theme: Dark mode only. Background: pure black. Text: near-white.
+
+Palette: Extract gold directly from the uploaded Metro Man logo. Create CSS variables:
+
+--metro-black: #000000
+
+--metro-gold: <extract from logo> (fallback #b79a3b if extraction unavailable)
+
+--text: #f5f5f5
+
+--muted: #bdbdbd
+
+Logo: Use metro_mascot_only.png (Metro Man) in the hero.
+
+Wordmark: Render “METRO” in Franklin Gothic Heavy Italic.
+
+Font
+
+Upload the Franklin Gothic Heavy Italic font file(s) (WOFF2 preferred) and register:
+
+@font-face {
+  font-family: 'FranklinGothicHeavyItalic';
+  src: url('/assets/fonts/FranklinGothic-HeavyItalic.woff2') format('woff2');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+Use: The header brand lockup uses 'FranklinGothicHeavyItalic', Impact, 'Arial Narrow Bold', Arial, sans-serif.
+
+Body font: Inter or system UI stack for readability.
+
+Layout
+
+Header (sticky): Left = METRO wordmark (using the font above), Right = single nav item “Contact”.
+
+Header background: --metro-black; 1px bottom border in #1f1f1f.
+
+Hero Section (centered, compact):
+
+Metro Man logo on the left; headline + subhead on the right (stacked on mobile).
+
+Headline: “Quick-Start Guides” in Franklin Gothic Heavy Italic (italic, gold accent underline).
+
+Subhead: “Easy installation PDFs for our most popular units.” (muted text).
+
+Guides Grid: 2-column desktop, 1-column mobile.
+
+Each card: rounded-xl, soft shadow, 1px border #222.
+
+Card background: #0f0f0f.
+
+Title in near-white; tiny tag “PDF” pill in gold/black.
+
+Two buttons per card: View PDF (primary, gold on black) and Download (outline in gold).
+
+Footer: Small, centered; text in muted color with links. Include © Metro Water Systems, phone 888-309-2837, and sales@wbi72.com.
+
+Buttons (states & a11y)
+
+Primary (gold): background var(--metro-gold), text black; hover = darken gold ~10%; focus ring 2px gold with 1px black offset for contrast.
+
+Outline: transparent background, 1.5px border gold; hover = faint gold wash (rgba(gold, .08)).
+
+Buttons full-width on mobile; keyboard-navigable with visible focus.
+
+Cards (exact items & links)
+
+Metro Soft — Easy Installation / Quick-Start (PDF)
+
+View: https://YOURDOMAIN.com/files/metro-soft-quickstart.pdf
+
+Download: same URL (native browser download)
+
+Metro Duo — Easy Installation / Quick-Start (PDF)
+
+View: https://YOURDOMAIN.com/files/metro-duo-quickstart.pdf
+
+Metro AIO — Easy Installation / Quick-Start (PDF)
+
+View: https://YOURDOMAIN.com/files/metro-aio-quickstart.pdf
+
+Metro 5 — Easy Installation / Quick-Start (PDF)
+
+View: https://YOURDOMAIN.com/files/metro-5-quickstart.pdf
+
+Chlor-Out — Easy Installation / Quick-Start (PDF)
+
+View: https://YOURDOMAIN.com/files/chlor-out-quickstart.pdf
+
+(If file sizes/page counts are available, show a tiny meta row like “PDF • 8 pages • 1.2 MB”; otherwise omit.)
+
+Content (exact text)
+
+Header Brand: METRO (Franklin Gothic Heavy Italic)
+
+Nav: Contact
+
+Hero H1: Quick-Start Guides
+
+Hero Subhead: Easy installation PDFs for our most popular units.
+
+Card Subtitle: Easy Installation / Quick-Start (PDF)
+
+CTA Labels: “View PDF” and “Download”
+
+Performance
+
+No heavy animations; keep HTML/CSS lean.
+
+Lazy-load the Metro Man image; preconnect to font if Deepsite hosts it.
+
+Serve font as WOFF2; ensure font-display: swap.
+
+SEO
+
+Title: Metro Quick-Start Guides (PDF) — Metro Soft, Duo, AIO, Metro 5, Chlor-Out
+
+Meta Description: Download easy, step-by-step installation PDFs for Metro Soft, Metro Duo, Metro AIO, Metro 5, and Chlor-Out. Dark theme, mobile-friendly.
+
+Add CollectionPage schema and breadcrumb (Home > Quick-Start Guides).
+
+Accessibility
+
+Maintain WCAG AA contrast on all text/buttons over black.
+
+Provide aria-label on each “View PDF” (e.g., “View Metro Soft PDF”) and “Download” button.
+
+If Assets Missing
+
+If metro_mascot_only.png isn’t available, replace with a round gold badge containing the italic wordmark.
+
+If the Franklin font can’t load, fall back to Impact/Arial Narrow Bold but keep the italic, heavy style.
+
+Optional Support Block
+
+Below the grid (muted text):
+“Powered by Wood Brothers Industires"
+.”
+Add this logo where metro man should be 
+Make background behind metro man white, and put METRO WATER PRODUCTS AT THE TOP IN A LARGER FONT, rather than just metro
+Add gold bolder around white circle and make the circle bigger so metro man is not touching the sides and the png is fully shown
+Change POWERED BY to be as large as metro water products at top, and put this logo large where it says wood brothers industries
