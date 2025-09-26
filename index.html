@@ -76,17 +76,17 @@
             }
         }
     </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body class="min-h-screen flex flex-col">
-    <header class="sticky top-0 z-50 bg-metro-black border-b border-gray-800">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="https://huggingface.co/spaces/MCCLAINA/metro/resolve/main/images/Artboard%201metro%20logo%20.png" 
-                     alt="Metro Water Products Logo" 
-                     class="h-40 w-auto">
-            </div>
-</div>
-    </header>
+<body class="min-h-screen flex flex-col overflow-x-hidden">
+    <header class="sticky top-0 z-50 bg-metro-black border-b border-gray-800 w-full">
+  <div class="container mx-auto px-4 py-3 flex justify-center sm:justify-between items-center">
+    <img src="https://huggingface.co/spaces/MCCLAINA/metro/resolve/main/images/Artboard%201metro%20logo%20.png"
+         alt="Metro Water Products Logo"
+         class="h-10 sm:h-14 md:h-16 lg:h-20 w-auto max-w-full">
+  </div>
+</header>
+
 
     <main class="flex-grow">
        <section class="container mx-auto px-4 py-12 md:py-16">
@@ -250,14 +250,20 @@
 
     </main>
 
-    <footer class="relative bg-metro-black border-t border-gray-800 py-6">
-        <div class="container mx-auto px-4 text-center text-muted">
-            <p>© Metro Water Systems</p>
-            <p class="mt-1">Interested in distribution opportunities?</p>
-           <p class="mt-1">Contact us at info@metrowaterproducts.com</p>
-        </div>
-        
-    </footer>
+    <footer class="relative bg-metro-black border-t border-gray-800 py-6 mt-auto">
+  <div class="container mx-auto px-4 text-center text-gray-300 text-sm sm:text-base leading-relaxed">
+    <p>© Metro Water Systems</p>
+    <p class="mt-1">Interested in distribution opportunities?</p>
+    <p class="mt-1">
+      Contact us at
+      <a href="mailto:info@metrowaterproducts.com"
+         class="underline hover:text-metro-gold">
+         info@metrowaterproducts.com
+      </a>
+    </p>
+  </div>
+</footer>
+
 
     <script type="application/ld+json">
     {
